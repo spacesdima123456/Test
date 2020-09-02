@@ -1,0 +1,27 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http
+@using WebApplication16.Models;
+@model UserView
+
+<html>
+<head>
+</head>
+<body>
+<form method="post" asp-action="Crete" asp-controller="Home" asp-antiforgery="false">
+    
+    <div>
+        <label>Возраст</label>
+        <input asp-for="Age"/>
+    </div>
+
+    <div>
+        <label>Имя</label>
+        <input asp-for="Name"/>
+    </div>
+    
+    <button type="submit">Сохранить</button>
+
+
+</form>
+</body>
+</html>
